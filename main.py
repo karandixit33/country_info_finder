@@ -21,7 +21,7 @@ def get_country_details(country_name):
         print(f"Languages : {languages}\n")
 
     except Exception as e:
-        print("\n❌ Error: Could not fetch data. Please check the country name.\n")
+        print("\n Error: Could not fetch data. Please check the country name.\n")
 
 if __name__ == "__main__":
     print("Country Info Finder")
