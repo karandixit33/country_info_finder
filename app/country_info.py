@@ -1,5 +1,3 @@
-# app/country_info.py
-
 import requests
 import os
 from dotenv import load_dotenv
