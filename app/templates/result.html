@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% if error %}
+            <div class="error">
+                ❌ Error: {{ error }}
+                <br><br>
+                <a class="retry-btn" href="/">🔙 Try Again</a>
+            </div>
+        {% else %}
+            <img class="flag" src="{{ flag }}" alt="Flag of {{ country }}">
+            <div class="result-card">
+                <h2>{{ country }}</h2>
+                <p><strong>Capital:</strong> {{ capital }}</p>
+                <p><strong>Currency:</strong> {{ currency }}</p>
+                <p><strong>Language:</strong> {{ language }}</p>
+                <p><strong>Population:</strong> {{ population }}</p>
+                <p><strong>Area:</strong> {{ area }} km²</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

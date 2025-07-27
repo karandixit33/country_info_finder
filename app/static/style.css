@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #121212, #1f1f1f);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Main container */
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    animation: slideUp 1s ease-out;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Input Form */
+form input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    background-color: #333;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #5b21b6;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #7c3aed;
+}
+
+/* Result Display */
+.result-card {
+    margin-top: 30px;
+    text-align: left;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* Flag */
+.flag {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Error */
+.error {
+    color: #ff4c4c;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.retry-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #e11d48;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.retry-btn:hover {
+    background: #be123c;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

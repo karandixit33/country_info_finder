@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country Info Finder 🌍</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 Country Info Finder</h1>
+        <form action="/country" method="post">
+            <input type="text" name="country" placeholder="Enter a country name..." required>
+            <br>
+            <button type="submit">🔍 Search</button>
+        </form>
+    </div>
+</body>
+</html>
